@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Code Editor</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/blackboard.min.css" 
+    integrity="sha512-KnHAkH0/78Cyjs1tjV9/+00HK8gu1uKRCCKcWFxX0+rehRh9SYJqiG/2fY4St7H8rPItOsBkgQjN0m4rL5Wobw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="box">
+                <label for="html-code"><i class="fa-brands fa-html5"></i>HTML</label>
+                <textarea id="html-code" class="code-editor" aria-label="HTML Code Editor" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="box">
+                <label for="css-code"><i class="fa-brands fa-css3-alt"></i>CSS</label>
+                <textarea id="css-code" class="code-editor" aria-label="CSS Code Editor" onkeyup="run()"></textarea>
+            </div>
+
+            <div class="box">
+                <label for="js-code"><i class="fa-brands fa-js"></i>JAVASCRIPT</label>
+                <textarea id="js-code" class="code-editor" aria-label="JavaScript Code Editor" onkeyup="run()"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <div class="toolbar" role="toolbar" aria-label="Editor Toolbar">
+                <button id="theme-switcher" aria-label="Switch Theme"><i class="fas fa-paint-brush"></i>Switch Theme</button>
+                <button id="fullscreen-toggle" aria-label="Toggle Fullscreen"><i class="fas fa-expand"></i>Fullscreen</button>
+            </div>
+
+            <label for="output"><i class="fa-solid fa-play"></i>OUTPUT</label>
+            <iframe id="output" title="Output Frame" role="document" aria-live="polite"></iframe>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/javascript/javascript.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Body Styles */
+body {
+    background: linear-gradient(to right top, #8ab6d6, 6d9ebd, 5185a3, #356c8a, #1a5470);
+    color: #fff;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    width: 100%;
+    height: 90vh;
+    padding: 5px;
+    display: flex;
+}
+
+/* Left and Right side styles */
+.left, .right {
+    flex-basis: 50%;
+    padding: 0 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left .box {
+    height: 33vh;
+}
+
+/* Iframe Styles */
+iframe {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    border: none;
+    outline: none;
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Label Styles */
+label {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    height: 30px;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 10px;
+}
+
+label i {
+    margin-right: 10px;
+}
+
+/* Font Awesome Styles */
+.fa-brands, .fa-solid {
+    color: lightseagreen;
+}
+
+/* Toolbar Styles */
+.toolbar {
+    margin-bottom: 10px;
+}
+
+.toolbar button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toolbar button:hover {
+    background-color: #45a049;
+}
+
+.toolbar button:focus {
+    outline: none;
+}
